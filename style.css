@@ -1,0 +1,51 @@
+body {
+  background-color: #ffffff; 
+  font-family: 'Arial', sans-serif;
+  color: #c2185b;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px; 
+  margin: 20px auto; /
+  background-color: #ffe6ea; 
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+}
+
+.site-header, .site-footer {
+  background-color: #f8bbd0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #e91e63;
+}
+
+.skills-list li {
+  list-style-type: "❤️ "; 
+  margin: 5px 0;
+}
+
+.skills-item.vip {
+  font-weight: bold;
+  color: #d81b60;
+}
+
+.skills-item.standard {
+  color: #880e4f;
+}
+
+.site-footer p {
+  font-size: 14px;
+}
+
+img {
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
