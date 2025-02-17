@@ -1,51 +1,107 @@
 body {
-  background-color: #ffffff; 
-  font-family: 'Arial', sans-serif;
-  color: #c2185b;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 900px; 
-  margin: 20px auto; /
-  background-color: #ffe6ea; 
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
-}
-
-.site-header, .site-footer {
-  background-color: #f8bbd0;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 80px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: url("img/powder-pastel-with-hand-drawn-elements-wallpaper_52683-40631.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 h1 {
-  color: #e91e63;
+  width: fit-content;
+  font-family: "Georgia", serif;
+  font-size: 42px;
+  color: #444;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.skills-list li {
-  list-style-type: "❤️ "; 
-  margin: 5px 0;
+h2 {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #ddd;
 }
 
-.skills-item.vip {
-  font-weight: bold;
-  color: #d81b60;
-}
-
-.skills-item.standard {
-  color: #880e4f;
-}
-
-.site-footer p {
-  font-size: 14px;
-}
-
-img {
-  margin-top: 10px;
+.container {
+  width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.site-header img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-item {
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  border-left: 10px solid #c4c4c4;
+  color: #555;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.standard {
+  border-color: #ffb6a1;
+}
+
+.vip {
+  border-color: #ff5733;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.features p {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.features p:hover {
+  transform: scale(1.05);
+}
+
+.feature-kitten {
+  background-image: url("img/heart.png");
+  background-size: 40px;
+  background-position: center top;
+}
+
+.feature-cat {
+  background-image: url("img/rose.png");
+  background-size: 40px;
+  background-position: center top;
+}
+
+.feature-train {
+  background-image: url("img/hugging-face.png");
+  background-size: 40px;
+  background-position: center top;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  color: #666;
+  font-size: 14px;
 }
