@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background: url("img/powder-pastel-with-hand-drawn-elements-wallpaper_52683-40631.jpg") no-repeat center center fixed;
+  background: url("../img/powder-pastel-with-hand-drawn-elements-wallpaper_52683-40631.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -81,19 +81,19 @@ h2 {
 }
 
 .feature-kitten {
-  background-image: url("img/heart.png");
+  background-image: url("../img/heart.png");
   background-size: 40px;
   background-position: center top;
 }
 
 .feature-cat {
-  background-image: url("img/rose.png");
+  background-image: url("../img/rose.png");
   background-size: 40px;
   background-position: center top;
 }
 
 .feature-train {
-  background-image: url("img/hugging-face.png");
+  background-image: url("../img/hugging-face.png");
   background-size: 40px;
   background-position: center top;
 }
