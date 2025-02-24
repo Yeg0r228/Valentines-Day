@@ -6,6 +6,7 @@ body {
   color: #333;
   background: url("../img/powder-pastel-with-hand-drawn-elements-wallpaper_52683-40631.jpg") no-repeat center center fixed;
   background-size: cover;
+  
 }
 
 h1 {
@@ -91,6 +92,19 @@ h2 {
   background-size: 40px;
   background-position: center top;
 }
+
+
+.site-footer p {
+  background-color: #ffe2e2;
+  padding: 10px 20px; 
+   border-radius: 0px 10px ;
+   border: 1px solid #ff5a26 ;
+   cursor: pointer;
+}
+.site-footer p:last-child{
+  cursor: help;
+}
+
 
 .feature-train {
   background-image: url("../img/hugging-face.png");
