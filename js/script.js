@@ -33,16 +33,16 @@ document.getElementById('btn_love_wishes').addEventListener('click', () => {
     let index = Math.floor(Math.random() * arrayOfLoveWishes.length);
     document.getElementById('p_love_wishes').innerText = arrayOfLoveWishes[index];
 
-    countofHearts--;
+    countofHearts--
     console.log('countofHearts ' + countofHearts);
     document.getElementById('count-of-hearts').innerText = '🧡'.repeat(countofHearts) + '🤍'.repeat(5 - countofHearts);
 
-    if (countofHearts === 0) {
+    if (countofHearts == 0) {
         document.getElementById('btn_love_wishes').style.display = 'none';
     }
 });
 
-document.getElementById('btn-buy-wishes').addEventListener('click', () => {
+document.getElementById('btn-buy-hearts').addEventListener('click', () => {
     countofHearts = 5;
     document.getElementById('count-of-hearts').innerText = '🧡'.repeat(countofHearts);
     document.getElementById('btn_love_wishes').style.display = 'inline-block';
