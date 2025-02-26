@@ -1,6 +1,6 @@
 console.log('Script connected');
 
-const arrayOfLoveWishes= [
+const arrayOfLoveWishes = [
     'Кохання це не тільки слова, це почуття, яке виражається вчинками.',
     'Вмієте любити - вмієте жити. Вмієте жити - вмієте любити.',
     'Любов - це велика сила, яка може змінити світ.',
@@ -22,11 +22,30 @@ const arrayOfLoveWishes= [
     'Кохання - це коли ти відчуваєш себе повним поруч з іншою людиною.',
     'Любов - це коли ти готовий зробити все, щоб інша людина відчувала себе коханою.'
 ];
-  
 
-   
-document.getElementById('btn_wishes').addEventListener('click', ()=> {
-    // alert('Button clicked');
-   let index = Math.floor(Math.random() * arrayOfLoveWishes.length);
-    document.getElementById('p_wishes').innerText = arrayOfLoveWishes[index];
-})
+let countofHearts = 5;
+console.log('countofHearts ' + countofHearts);
+
+document.getElementById('count-of-hearts').innerText = '🧡'.repeat(countofHearts);
+
+document.getElementById('btn_love_wishes').addEventListener('click', () => {
+    console.log('Button clicked');
+    let index = Math.floor(Math.random() * arrayOfLoveWishes.length);
+    document.getElementById('p_love_wishes').innerText = arrayOfLoveWishes[index];
+
+    countofHearts--;
+    console.log('countofHearts ' + countofHearts);
+    document.getElementById('count-of-hearts').innerText = '🧡'.repeat(countofHearts) + '🤍'.repeat(5 - countofHearts);
+
+    if (countofHearts === 0) {
+        document.getElementById('btn_love_wishes').style.display = 'none';
+    }
+});
+
+document.getElementById('btn-buy-wishes').addEventListener('click', () => {
+    countofHearts = 5;
+    document.getElementById('count-of-hearts').innerText = '🧡'.repeat(countofHearts);
+    document.getElementById('btn_love_wishes').style.display = 'inline-block';
+    document.getElementById('p_love_wishes').innerText = '';
+    console.log('btn-buy-wishes clicked');
+});
